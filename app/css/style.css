@@ -9,22 +9,19 @@ body,
 
 :root {
   /* where we define our variables */
-  --light-blue: #2998ff;
-  --dark-blue: #135cc5;
-  --light-red: #f87171;
-  --dark-red: #dc2626;
-  --h1: 7rem;
-  --h2: 6rem;
-  --h3: 5rem;
-  --h4
-  --h5
+  --
+  --h1: 7.594rem;
+  --h2: 5rem;
+  --h3: 4rem;
+  --h4: 3rem;
+  --h5: 2rem;
 }
 
-.warm {
+.light {
   --primary: var(--light-red);
 }
 
-.cool {
+.dark {
   --primary: var(--light-blue);
 }
 
