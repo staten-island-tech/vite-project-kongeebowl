@@ -1,3 +1,4 @@
+import "../css/variables.css";
 html,
 body,
 * {
@@ -5,16 +6,8 @@ body,
   padding: 0;
   box-sizing: border-box;
   font-size: 10px;
-}
-
-:root {
-  /* where we define our variables */
-  --
-  --h1: 7.594rem;
-  --h2: 5rem;
-  --h3: 4rem;
-  --h4: 3rem;
-  --h5: 2rem;
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 400;
 }
 
 .light {
@@ -22,7 +15,7 @@ body,
 }
 
 .dark {
-  --primary: var(--light-blue);
+  --primary: var(--dark-navy);
 }
 
 body {
