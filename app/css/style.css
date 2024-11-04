@@ -16,15 +16,25 @@ body,
 }
 
 .dark {
-  --primary: var(--dark-navy);
+  --bg-color: var(--light-dark-blue);
+  --card-color: var(--dark-navy);
+  --title-color: var(--light-blue);
+  --text-color: var(--light-red);
 }
 
 body {
-  background-color: var(--primary);
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 h1 {
   font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+  font-weight: bold;
+  color: var(--title-color);
 }
 
 #container {
@@ -37,17 +47,16 @@ h1 {
 }
 
 .card {
-  width: 30%;
-  height: 40vw;
-  border: 5px solid black;
+  width: 22%;
+  height: 25vw;
+  border: 5px solid var(--card-color);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   margin: 2rem 1px;
-  background-color: rgb(130, 104, 177);
-  box-shadow: 7px 7px 5px rgb(86, 58, 136);
+  background-color: var(--card-color);
 }
 
 .card-img {
