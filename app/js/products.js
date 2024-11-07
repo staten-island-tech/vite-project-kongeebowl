@@ -120,12 +120,12 @@ const gnomes = [
     image: "images/swolgnome.jpg",
   },
   {
-    name: "Character 16",
+    name: "Bee Gnome",
     rizz: 8,
     magic: 5,
     strength: 6,
     looks: 7,
-    image: "",
+    image: "images/beegnome.webp",
   },
   {
     name: "Character 17",
