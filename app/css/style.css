@@ -9,6 +9,7 @@ body,
   font-size: 10px;
   font-family: "La Belle Aurore", serif;
   font-weight: 400;
+  text-align: center;
 }
 
 .light {
@@ -30,7 +31,6 @@ body {
 h1 {
   font-size: var(--h1);
   font-weight: bold;
-  text-align: center;
   margin: 30px;
 }
 
@@ -38,7 +38,6 @@ h2 {
   font-size: var(--h2);
   font-weight: bold;
   color: var(--title-color);
-  text-align: center;
 }
 
 #container {
@@ -66,4 +65,15 @@ h2 {
 .card-img {
   object-fit: contain;
   width: 90%;
+}
+
+#btn {
+  width: 12rem;
+  height: 4rem;
+  font-size: 20px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  border-radius: 48px;
 }

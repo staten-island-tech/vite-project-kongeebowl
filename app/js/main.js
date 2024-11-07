@@ -2,6 +2,10 @@ import "../css/style.css";
 import { gnomes } from "./products";
 import { DOMSelectors } from "./DOMS";
 
+function rizzButton() {
+  DOMSelectors.button;
+}
+
 function addCards() {
   gnomes.forEach((gnome) =>
     DOMSelectors.box.insertAdjacentHTML(
@@ -15,5 +19,8 @@ function addCards() {
     )
   );
 }
-
 addCards();
+
+function rizzGods() {
+  gnomes.filter((gnome) => gnome.rizz >= 7);
+}
