@@ -1,10 +1,13 @@
 const DOMSelectors = {
   box: document.getElementById("container"),
   button: document.getElementById("btn"),
-  rizz: document.getElementById("rizzbtn"),
-  hot: document.getElementById("hotbtn"),
-  wiz: document.getElementById("wizbtn"),
-  swol: document.getElementById("swolbtn"),
+  rizzButton: document.getElementById("rizzbtn"),
+  hotnessButton: document.getElementById("hotbtn"),
+  wizButton: document.getElementById("wizbtn"),
+  swolButton: document.getElementById("swolbtn"),
+  allGnomes: document.getElementById("allbtn"),
+  lightMode: document.getElementById("lightbtn"),
+  darkMode: document.getElementById("darkbtn"),
 };
 
 export { DOMSelectors };

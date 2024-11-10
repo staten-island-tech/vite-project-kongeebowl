@@ -8,7 +8,8 @@ function addCards(gnome) {
     `<div class="card"> 
         <h2>${gnome.name}</h2>
         <img src="${gnome.image}" alt="" class="card-img">
-        <p>${gnome.desc}</p>
+        <p>Rizz - ${gnome.rizz} Looks - ${gnome.looks}</p>
+        <p>Magic - ${gnome.magic} Strength - ${gnome.strength}</p>
       </div>`
   );
 }
@@ -17,10 +18,10 @@ function clear() {
   DOMSelectors.box.innerHTML = "";
 }
 
-function filterAndSortGnomes(trait, threshold) {
+function filterAndSortGnomes(trait, minimum) {
   return gnomes
-    .filter((gnome) => gnome[trait] >= threshold) // Filter gnomes based on the threshold
-    .sort((a, b) => b[trait] - a[trait]); // Sort the filtered gnomes by the trait in descending order
+    .filter((gnome) => gnome[trait] >= minimum)
+    .sort((a, b) => b[trait] - a[trait]);
 }
 
 function gnomeCards(filteredGnomes) {
@@ -31,29 +32,44 @@ function gnomeCards(filteredGnomes) {
 function displayCards() {
   gnomeCards(gnomes);
 
-  DOMSelectors.rizz.addEventListener("click", (event) => {
+  DOMSelectors.allGnomes.addEventListener("click", (event) => {
     event.preventDefault();
-    const rizzLords = filterAndSortGnomes("rizz", 7); // Filter and sort by rizz
+    gnomeCards(gnomes);
+  });
+
+  DOMSelectors.rizzButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    const rizzLords = filterAndSortGnomes("rizz", 8);
     gnomeCards(rizzLords);
   });
 
-  DOMSelectors.hot.addEventListener("click", (event) => {
+  DOMSelectors.hotnessButton.addEventListener("click", (event) => {
     event.preventDefault();
-    const looksmaxxer = filterAndSortGnomes("looks", 8); // Filter and sort by looks
+    const looksmaxxer = filterAndSortGnomes("looks", 8);
     gnomeCards(looksmaxxer);
   });
 
-  DOMSelectors.wiz.addEventListener("click", (event) => {
+  DOMSelectors.wizButton.addEventListener("click", (event) => {
     event.preventDefault();
-    const wizard = filterAndSortGnomes("magic", 8); // Filter and sort by magic
+    const wizard = filterAndSortGnomes("magic", 8);
     gnomeCards(wizard);
   });
 
-  DOMSelectors.swol.addEventListener("click", (event) => {
+  DOMSelectors.swolButton.addEventListener("click", (event) => {
     event.preventDefault();
-    const beachBum = filterAndSortGnomes("strength", 9); // Filter and sort by strength
+    const beachBum = filterAndSortGnomes("strength", 9);
     gnomeCards(beachBum);
   });
 }
 
 displayCards();
+
+DOMSelectors.lightMode.addEventListener("click", () => {
+  document.body.classList.add("light");
+  document.body.classList.remove("dark");
+});
+
+DOMSelectors.darkMode.addEventListener("click", () => {
+  document.body.classList.add("dark");
+  document.body.classList.remove("light");
+});

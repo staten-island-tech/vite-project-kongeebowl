@@ -1,17 +1,16 @@
 :root {
   --h1: 5.61rem;
   --h2: 4.209rem;
-  --h3: 2.369rem;
-  --h5: 1.777rem;
-  --h6: 1.333rem;
-  --p: 1.6rem;
+  --p: 2.369rem;
 
   /* Dark Mode */
   --dark-navy: #121633;
   --light-blue: #c2d7ea;
-  --light-red: #a66e7f;
+  --light-red: #e02d4e;
   --light-dark-blue: #201c3c;
 
   /* Light Mode */
   --pistachio: #b3deb7;
+  --blackish: #22242a;
+  --forest-green: #214a49;
 }
