@@ -6,6 +6,7 @@ const gnomes = [
     strength: 9,
     looks: 10,
     image: "images/buffgnome.jpg",
+    desc: "A muscular powerhouse, the Buff Gnome’s strength and charm are unmatched.",
   },
   {
     name: "Scandalous Gnome",
@@ -14,6 +15,7 @@ const gnomes = [
     strength: 1,
     looks: 5,
     image: "images/scandalousgnome.jpg",
+    desc: "The Scandalous Gnome lives for drama, always up to something bold.",
   },
   {
     name: "Homeless Gnome",
@@ -22,6 +24,7 @@ const gnomes = [
     strength: 3,
     looks: 3,
     image: "images/homelessgnome.jpg",
+    desc: "A wanderer with little power but a resilient spirit and kind heart.",
   },
   {
     name: "Saggin Gnome",
@@ -30,6 +33,7 @@ const gnomes = [
     strength: 8,
     looks: 7,
     image: "images/saggingnome.jpg",
+    desc: "Cool and strong, the Saggin Gnome is a reliable, confident friend.",
   },
   {
     name: "Rocker Gnome",
@@ -38,6 +42,7 @@ const gnomes = [
     strength: 9,
     looks: 10,
     image: "images/rockergnome.jpg",
+    desc: "A fierce, magical legend with style to match and a rockstar spirit.",
   },
   {
     name: "Zombie Gnome",
@@ -46,6 +51,7 @@ const gnomes = [
     strength: 8,
     looks: 0,
     image: "images/zombiegnome.jpg",
+    desc: "Tough and unyielding, the Zombie Gnome endures any hardship.",
   },
   {
     name: "Magic Gnome",
@@ -54,6 +60,7 @@ const gnomes = [
     strength: 8,
     looks: 10,
     image: "images/magicgnome.jpg",
+    desc: "With charm, magic, and strength, the Magic Gnome inspires awe.",
   },
   {
     name: "Terraira Gnome",
@@ -62,6 +69,7 @@ const gnomes = [
     strength: 5,
     looks: 8,
     image: "images/terrairagnome.jpg",
+    desc: "A nature guardian, the Terraira Gnome uses earth magic for protection.",
   },
   {
     name: "Ginger Crochet Gnome",
@@ -70,6 +78,7 @@ const gnomes = [
     strength: 6,
     looks: 7,
     image: "images/gingercrochet.jpg",
+    desc: "Crafty and magical, the Ginger Crochet Gnome creates spells and art.",
   },
   {
     name: "Stupid Baby Gnome",
@@ -78,6 +87,7 @@ const gnomes = [
     strength: 0,
     looks: 0,
     image: "images/stupidbaby.jpg",
+    desc: "Playful and carefree, the Stupid Baby Gnome brings joy to all.",
   },
   {
     name: "Fortnite Gnome",
@@ -86,6 +96,7 @@ const gnomes = [
     strength: 5,
     looks: 6,
     image: "images/fortnitegnome.jfif",
+    desc: "Swift and magical, the Fortnite Gnome outplays foes with ease.",
   },
   {
     name: "Enlightened One",
@@ -94,6 +105,7 @@ const gnomes = [
     strength: 10000,
     looks: 10000,
     image: "images/enlightenedone.jpg",
+    desc: "The ultimate gnome, powerful beyond measure and universally revered.",
   },
   {
     name: "Patriot Gnome",
@@ -102,6 +114,7 @@ const gnomes = [
     strength: 7,
     looks: 5,
     image: "images/americangnome.jpg",
+    desc: "Loyal and strong, the Patriot Gnome defends with pride and magic.",
   },
   {
     name: "Christmas Gnome",
@@ -110,6 +123,7 @@ const gnomes = [
     strength: 6,
     looks: 9,
     image: "images/christmasgnome.jpg",
+    desc: "Bringing festive cheer, the Christmas Gnome lights up the season.",
   },
   {
     name: "Powerlifter Gnome",
@@ -118,6 +132,7 @@ const gnomes = [
     strength: 9,
     looks: 8,
     image: "images/swolgnome.jpg",
+    desc: "Mighty and determined, the Powerlifter Gnome lifts spirits and weights.",
   },
   {
     name: "Bee Gnome",
@@ -126,38 +141,43 @@ const gnomes = [
     strength: 6,
     looks: 7,
     image: "images/beegnome.webp",
+    desc: "The busy Bee Gnome is always ready to lend a hand and a smile.",
   },
   {
-    name: "Character 17",
+    name: "Angy Gnome",
     rizz: 6,
     magic: 9,
     strength: 8,
     looks: 5,
-    image: "",
+    image: "images/angygnome.jpg",
+    desc: "Fueled by fierce emotions, the Angy Gnome channels power and anger.",
   },
   {
-    name: "Character 18",
+    name: "Spooky Gnome",
     rizz: 9,
     magic: 7,
     strength: 6,
     looks: 8,
-    image: "",
+    image: "images/spookygnome.webp",
+    desc: "Mysterious and dark, the Spooky Gnome weaves eerie magic.",
   },
   {
-    name: "Character 19",
+    name: "Wood Gnome",
     rizz: 7,
     magic: 6,
     strength: 9,
     looks: 5,
-    image: "",
+    image: "images/woodgnome.webp",
+    desc: "The Wood Gnome is a sturdy forest guardian with nature-based power.",
   },
   {
-    name: "Character 20",
+    name: "Gay Gnome",
     rizz: 5,
     magic: 8,
     strength: 7,
     looks: 9,
-    image: "",
+    image: "images/gaygnmoe.jpg",
+    desc: "Confident and magical, the Gay Gnome radiates love and acceptance.",
   },
 ];
 

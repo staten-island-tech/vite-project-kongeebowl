@@ -7,9 +7,9 @@ function addCards(gnome) {
     "beforeend",
     `<div class="card"> 
         <h2>${gnome.name}</h2>
-        <img src="${gnome.image}" alt="" class="card-img">
-        <p>Rizz - ${gnome.rizz} Looks - ${gnome.looks}</p>
-        <p>Magic - ${gnome.magic} Strength - ${gnome.strength}</p>
+        <img src="${gnome.image}" alt="${gnome.desc}" class="card-img">
+        <h3>Rizz - ${gnome.rizz} Looks - ${gnome.looks}</h3>
+        <h3>Magic - ${gnome.magic} Strength - ${gnome.strength}</h3>
       </div>`
   );
 }
