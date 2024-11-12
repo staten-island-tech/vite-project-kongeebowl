@@ -18,7 +18,7 @@ function clear() {
   DOMSelectors.box.innerHTML = "";
 }
 
-function filterAndSortGnomes(trait, minimum) {
+function sortGnomes(trait, minimum) {
   return gnomes
     .filter((gnome) => gnome[trait] >= minimum)
     .sort((a, b) => b[trait] - a[trait]);
@@ -39,37 +39,37 @@ function displayCards() {
 
   DOMSelectors.rizzButton.addEventListener("click", (event) => {
     event.preventDefault();
-    const rizzLords = filterAndSortGnomes("rizz", 8);
+    const rizzLords = sortGnomes("rizz", 8);
     gnomeCards(rizzLords);
   });
 
   DOMSelectors.hotnessButton.addEventListener("click", (event) => {
     event.preventDefault();
-    const looksmaxxer = filterAndSortGnomes("looks", 8);
+    const looksmaxxer = sortGnomes("looks", 8);
     gnomeCards(looksmaxxer);
   });
 
   DOMSelectors.wizButton.addEventListener("click", (event) => {
     event.preventDefault();
-    const wizard = filterAndSortGnomes("magic", 8);
+    const wizard = sortGnomes("magic", 8);
     gnomeCards(wizard);
   });
 
   DOMSelectors.swolButton.addEventListener("click", (event) => {
     event.preventDefault();
-    const beachBum = filterAndSortGnomes("strength", 9);
+    const beachBum = sortGnomes("strength", 9);
     gnomeCards(beachBum);
   });
 }
 
 displayCards();
 
-DOMSelectors.lightMode.addEventListener("click", () => {
-  document.body.classList.add("light");
-  document.body.classList.remove("dark");
-});
-
-DOMSelectors.darkMode.addEventListener("click", () => {
-  document.body.classList.add("dark");
-  document.body.classList.remove("light");
+DOMSelectors.toggleThemeButton.addEventListener("click", () => {
+  if (document.body.classList.contains("dark")) {
+    document.body.classList.add("light");
+    document.body.classList.remove("dark");
+  } else {
+    document.body.classList.add("dark");
+    document.body.classList.remove("light");
+  }
 });

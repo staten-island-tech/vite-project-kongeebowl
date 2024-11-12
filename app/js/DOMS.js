@@ -6,8 +6,7 @@ const DOMSelectors = {
   wizButton: document.getElementById("wizbtn"),
   swolButton: document.getElementById("swolbtn"),
   allGnomes: document.getElementById("allbtn"),
-  lightMode: document.getElementById("lightbtn"),
-  darkMode: document.getElementById("darkbtn"),
+  toggleThemeButton: document.getElementById("themebtn"),
 };
 
 export { DOMSelectors };
