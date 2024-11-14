@@ -86,3 +86,40 @@ button {
   margin: 2px;
   border-radius: 48px;
 }
+
+
+
+@media screen and (max-width:1400px) {
+    .container {
+        flex-direction: row;
+    }
+    .card {
+        width: 30%;
+        height: auto;
+    }  
+}
+
+@media screen and (max-width: 850px) {
+    .container {
+        flex-direction: row;
+    }
+    .card {
+        width: 45%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        margin: auto;
+        text-align: center;
+        font-size: 5rem;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .card {
+        width: 90%;
+        height: auto;
+    }
+}
